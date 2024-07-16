@@ -4,11 +4,15 @@ import './components/reset-button.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const number = document.querySelector('[data-key="number"]');
+  const subtractBtn = document.querySelector('subtract-btn');
+  const addBtn = document.querySelector('add-btn');
+  const resetBtn = document.querySelector('reset-btn');
+
 
   let state = {
     count: 0,
     max: 10,
-    min: 0,
+    min: -10,
     status: 'normal'
   };
 
